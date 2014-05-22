@@ -1,0 +1,49 @@
+Acme\UserBundle\Entity\User:
+    type: entity
+    table: auten_users
+    uniqueConstraints:
+        UNIQ_2B0955A0F85E0677:
+            columns:
+                - username
+        UNIQ_2B0955A0E7927C74:
+            columns:
+                - email
+    id:
+        id:
+            type: integer
+            nullable: false
+            unsigned: false
+            comment: ''
+            id: true
+            generator:
+                strategy: IDENTITY
+    fields:
+        username:
+            type: string
+            nullable: false
+            length: 25
+            fixed: false
+            comment: ''
+        password:
+            type: string
+            nullable: false
+            length: 64
+            fixed: false
+            comment: ''
+        email:
+            type: string
+            nullable: false
+            length: 60
+            fixed: false
+            comment: ''
+        isActive:
+            type: boolean
+            nullable: false
+            comment: ''
+            column: is_active
+        role:
+            type: integer
+            nullable: false
+            comment: ''
+            column: role
+    lifecycleCallbacks: {  }

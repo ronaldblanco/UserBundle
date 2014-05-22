@@ -1,0 +1,26 @@
+Acme\UserBundle\Entity\Role:
+    type: entity
+    table: Role
+    id:
+        id:
+            type: integer
+            nullable: false
+            unsigned: false
+            comment: ''
+            id: true
+            generator:
+                strategy: IDENTITY
+    fields:
+        role:
+            type: string
+            nullable: false
+            length: 50
+            fixed: false
+            comment: ''
+        description:
+            type: string
+            nullable: false
+            length: 100
+            fixed: false
+            comment: ''
+    lifecycleCallbacks: {  }

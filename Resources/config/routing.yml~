@@ -1,0 +1,15 @@
+acme_user_homepage:
+    pattern:  /hello/{name}
+    defaults: { _controller: AcmeUserBundle:Default:index }
+
+_auten_users:
+    resource: "@AcmeUserBundle/Controller/AutenUsersController.php"
+    type:     annotation
+    
+_auten_role:
+    resource: "@AcmeUserBundle/Controller/RoleController.php"
+    type:     annotation
+
+_auten_usersrole:
+    resource: "@AcmeUserBundle/Controller/UsersRoleController.php"
+    type:     annotation
