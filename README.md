@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 This is a bundles for entity autentication in Symfony 2.4.4.
 The only thing you need to do if want to try it is make it run as a bundle in your symfony project and make the necesary changes in your app/config/security.yml file.
 
@@ -23,3 +24,7 @@ security:
            entity: { class: AcmeUserBundle:User, property: username }
 
 The entity User.php is for the autentication and AutenUsers.php is for the CRUD operations. Both are join to the same table.
+=======
+UserBundle
+==========
+>>>>>>> 3984aaca209ebb1cf9dd34d78fd76e82835cd1fd
